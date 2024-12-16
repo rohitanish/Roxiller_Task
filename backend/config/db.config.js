@@ -13,7 +13,7 @@ const connectDB = async () => {
         console.log('\x1b[42m%s\x1b[0m', '[success]', 'MongoDB Connected successfully');
         console.log('\x1b[36m%s\x1b[0m', '[info]', `Database: ${conn.connection.name}`);
 
-        // Check collection data
+        //here we will check the connection
         const collection = mongoose.connection.collection('product');
         const count = await collection.countDocuments();
         console.log('\x1b[36m%s\x1b[0m', '[info]', `Found ${count} documents in collection`);
