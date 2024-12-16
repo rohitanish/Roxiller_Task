@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Transaction = require('../models/Transaction');
 
-// List Transactions API
+// Transactions API
 router.get('/transactions', async (req, res) => {
   try {
     const { month, search = '', page = 1, perPage = 10 } = req.query;
