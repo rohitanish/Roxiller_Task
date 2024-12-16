@@ -1,8 +1,8 @@
-// controllers/transaction.controller.js
+
 const Transaction = require('../models/Transaction');
 
 const transactionController = {
-  // Get all transactions with search and pagination
+ 
   getTransactions: async (req, res) => {
     try {
       const { month, search = '', page = 1, perPage = 10 } = req.query;
@@ -47,8 +47,7 @@ const transactionController = {
     }
   },
 
-  // Other controller methods...
-  // Add your statistics, bar chart, and pie chart methods here
+  
 };
 
 module.exports = transactionController;
