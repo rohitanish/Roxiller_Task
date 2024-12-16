@@ -10,8 +10,8 @@ const transactionSchema = new mongoose.Schema({
     sold: Boolean,
     dateOfSale: Date
 }, { 
-    collection: 'product',  // specifying the exact collection name
-    strict: false  // this will allow for flexibility in document structure
+    collection: 'product',  
+    strict: false  
 });
 
 module.exports = mongoose.model('Transaction', transactionSchema, 'product');  // explicitly specify collection name
