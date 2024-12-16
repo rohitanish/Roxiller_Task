@@ -1,4 +1,4 @@
-// src/components/TransactionDashboard.js
+
 
 import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
@@ -88,7 +88,7 @@ const TransactionDashboard = () => {
 
  
 
-// Update fetch function
+
 const fetchAllData = async () => {
   setIsLoading(true);
   try {
